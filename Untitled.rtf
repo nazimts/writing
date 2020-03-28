@@ -1,0 +1,238 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red47\green180\blue29;\red46\green174\blue187;
+\red180\green36\blue25;\red159\green160\blue28;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c20238\c73898\c14947;\cssrgb\c20196\c73240\c78250;
+\cssrgb\c76409\c21698\c12524;\cssrgb\c68468\c68012\c14208;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Sat Mar 28 13:44:44 on ttys000\
+Marias-Air:~ mariabakatkina$ cd /Users/mariabakatkina/Desktop/git\
+Marias-Air:git mariabakatkina$ git init\
+Reinitialized existing Git repository in /Users/mariabakatkina/Desktop/git/.git/\
+Marias-Air:git mariabakatkina$ git status\
+On branch master\
+Your branch is up to date with 'origin/master'.\
+\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 modified:   poem.txt\cf2 \
+\
+Marias-Air:git mariabakatkina$ git commit -,"ss"\
+error: unknown switch `,'\
+usage: git commit [<options>] [--] <pathspec>...\
+\
+    -q, --quiet           suppress summary after successful commit\
+    -v, --verbose         show diff in commit message template\
+\
+Commit message options\
+    -F, --file <file>     read message from file\
+    --author <author>     override author for commit\
+    --date <date>         override date for commit\
+    -m, --message <message>\
+                          commit message\
+    -c, --reedit-message <commit>\
+                          reuse and edit message from specified commit\
+    -C, --reuse-message <commit>\
+                          reuse message from specified commit\
+    --fixup <commit>      use autosquash formatted message to fixup specified commit\
+    --squash <commit>     use autosquash formatted message to squash specified commit\
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)\
+    -s, --signoff         add Signed-off-by:\
+    -t, --template <file>\
+                          use specified template file\
+    -e, --edit            force edit of commit\
+    --cleanup <default>   how to strip spaces and #comments from message\
+    --status              include status in commit message template\
+    -S, --gpg-sign[=<key-id>]\
+                          GPG sign commit\
+\
+Commit contents options\
+    -a, --all             commit all changed files\
+    -i, --include         add specified files to index for commit\
+    --interactive         interactively add files\
+    -p, --patch           interactively add changes\
+    -o, --only            commit only specified files\
+    -n, --no-verify       bypass pre-commit and commit-msg hooks\
+    --dry-run             show what would be committed\
+    --short               show status concisely\
+    --branch              show branch information\
+    --ahead-behind        compute full ahead/behind values\
+    --porcelain           machine-readable output\
+    --long                show status in long format (default)\
+    -z, --null            terminate entries with NUL\
+    --amend               amend previous commit\
+    --no-post-rewrite     bypass post-rewrite hook\
+    -u, --untracked-files[=<mode>]\
+                          show untracked files, optional modes: all, normal, no. (Default: all)\
+\
+Marias-Air:git mariabakatkina$ git add .\
+Marias-Air:git mariabakatkina$ git push\
+Everything up-to-date\
+Marias-Air:git mariabakatkina$ git diff\
+
+\f1\b diff --git a/poem.txt b/poem.txt
+\f0\b0 \
+
+\f1\b deleted file mode 100644
+\f0\b0 \
+
+\f1\b index d77e20c..0000000
+\f0\b0 \
+
+\f1\b --- a/poem.txt
+\f0\b0 \
+
+\f1\b +++ /dev/null
+\f0\b0 \
+\cf4 @@ -1,15 +0,0 @@\cf2 \
+\cf5 -\{\\rtf1\\ansi\\ansicpg1252\\cocoartf1671\\cocoasubrtf500\cf2 \
+\cf5 -\{\\fonttbl\\f0\\froman\\fcharset0 Times-Roman;\}\cf2 \
+\cf5 -\{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red255\\green255\\blue255;\}\cf2 \
+\cf5 -\{\\*\\expandedcolortbl;;\\cssrgb\\c0\\c0\\c0;\\cssrgb\\c100000\\c100000\\c100000;\}\cf2 \
+\cf5 -\\margl1440\\margr1440\\vieww10800\\viewh8400\\viewkind0\cf2 \
+\cf5 -\\deftab720\cf2 \
+\cf5 -\\pard\\pardeftab720\\sl460\\partightenfactor0\cf2 \
+\cf5 -\cf2 \
+\cf5 -\\f0\\fs40 \\cf2 \\cb3 \\expnd0\\expndtw0\\kerning0\cf2 \
+\cf5 -Two roads diverged in a yellow wood,\\cb1 \\\cf2 \
+\cf5 -\\cb3 And sorry I could not travel both\\cb1 \\\cf2 \
+\cf5 -\\cb3 And be one traveler, long I stood\\cb1 \\\cf2 \
+\cf5 -\\cb3 And looked down one as far as I could\\cb1 \\\cf2 \
+\cf5 -\\cb3 To where it bent in the undergrowth;\\\cf2 \
+\cf5 -bbmbmbbmbmbmmxzN<MxnZMNX\}\cf2 \
+\\ No newline at end of file\
+Marias-Air:git mariabakatkina$ git status\
+On branch master\
+Your branch is up to date with 'origin/master'.\
+\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 modified:   poem.txt\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add/rm <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf5 deleted:    poem.txt\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf5 poem.rtf\cf2 \
+\
+Marias-Air:git mariabakatkina$ git commit -m "m"\
+[master 49db0d9] m\
+ 1 file changed, 1 insertion(+), 1 deletion(-)\
+Marias-Air:git mariabakatkina$ git add .\
+Marias-Air:git mariabakatkina$ git push\
+Enumerating objects: 5, done.\
+Counting objects: 100% (5/5), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 289 bytes | 289.00 KiB/s, done.\
+Total 3 (delta 2), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.\
+To https://github.com/nazimts/writing.git\
+   3e81d30..49db0d9  master -> master\
+Marias-Air:git mariabakatkina$ git diff\
+Marias-Air:git mariabakatkina$ git diff --stage\
+error: invalid option: --stage\
+Marias-Air:git mariabakatkina$ git log\
+\cf6 commit 49db0d97f4fdbb79f48cf26d7f608783ec6ace17 (
+\f1\b \cf4 HEAD -> \cf3 master
+\f0\b0 \cf6 , 
+\f1\b \cf5 origin/master
+\f0\b0 \cf6 )\cf2 \
+Author: Nazim <nazimts@yahoo.com>\
+Date:   Sat Mar 28 14:52:58 2020 -0400\
+\
+    m\
+\
+\cf6 commit 3e81d30b183cc8b42eae16c3e2dd9787ce26afa1\cf2 \
+Author: Nazim <nazimts@yahoo.com>\
+Date:   Sat Mar 28 14:32:46 2020 -0400\
+\
+    added third\
+\
+\cf6 commit 28246bf22aebc56d4eea2aa49cab38d2da534450\cf2 \
+Author: Nazim <nazimts@yahoo.com>\
+Date:   Sat Mar 28 12:14:20 2020 -0400\
+\
+    add another test\
+\
+\cf6 commit 78f01b9da74230e9cff02f8458cbd4ae92b47fa2\cf2 \
+Author: Nazim <nazimts@yahoo.com>\
+Date:   Sat Mar 28 12:03:51 2020 -0400\
+\
+    add\
+Marias-Air:git mariabakatkina$ git reset --soft HEAD^\
+Marias-Air:git mariabakatkina$ git status\
+On branch master\
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.\
+  (use "git pull" to update your local branch)\
+\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 renamed:    poem.txt -> poem.rtf\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf5 modified:   poem.rtf\cf2 \
+\
+Marias-Air:git mariabakatkina$ git log\
+\cf6 commit 3e81d30b183cc8b42eae16c3e2dd9787ce26afa1 (
+\f1\b \cf4 HEAD -> \cf3 master
+\f0\b0 \cf6 )\cf2 \
+Author: Nazim <nazimts@yahoo.com>\
+Date:   Sat Mar 28 14:32:46 2020 -0400\
+\
+    added third\
+\
+\cf6 commit 28246bf22aebc56d4eea2aa49cab38d2da534450\cf2 \
+Author: Nazim <nazimts@yahoo.com>\
+Date:   Sat Mar 28 12:14:20 2020 -0400\
+\
+    add another test\
+\
+\cf6 commit 78f01b9da74230e9cff02f8458cbd4ae92b47fa2\cf2 \
+Author: Nazim <nazimts@yahoo.com>\
+Date:   Sat Mar 28 12:03:51 2020 -0400\
+\
+    add\
+Marias-Air:git mariabakatkina$ git reset --soft 78f01b9da74230e9cff02f8458cbd4ae92b47fa2\
+Marias-Air:git mariabakatkina$ GIT LOG\
+fatal: cannot handle LOG as a builtin\
+Marias-Air:git mariabakatkina$ git log\
+\cf6 commit 78f01b9da74230e9cff02f8458cbd4ae92b47fa2 (
+\f1\b \cf4 HEAD -> \cf3 master
+\f0\b0 \cf6 )\cf2 \
+Author: Nazim <nazimts@yahoo.com>\
+Date:   Sat Mar 28 12:03:51 2020 -0400\
+\
+    add\
+Marias-Air:git mariabakatkina$ git status\
+On branch master\
+Your branch is behind 'origin/master' by 3 commits, and can be fast-forwarded.\
+  (use "git pull" to update your local branch)\
+\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf3 new file:   .DS_Store\cf2 \
+	\cf3 new file:   poem.rtf\cf2 \
+	\cf3 renamed:    poem.txt -> poem.txt.sb-95b8bab2-VGX2YQ\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf5 modified:   poem.rtf\cf2 \
+\
+Marias-Air:git mariabakatkina$ }
