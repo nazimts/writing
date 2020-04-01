@@ -2,3 +2,7 @@
 .DS_Store
 *.exe
 project.zip
+/target/
+.classpath
+/bin/
+tast-output/
